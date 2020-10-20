@@ -18,7 +18,7 @@ rm -f ./kubeadm-config.yaml
 cat <<EOF > ./kubeadm-config.yaml
 apiVersion: kubeadm.k8s.io/v1beta2
 kind: ClusterConfiguration
-kubernetesVersion: v${1}
+kubernetesVersion: latest 
 imageRepository: registry.aliyuncs.com/k8sxio
 controlPlaneEndpoint: "${APISERVER_NAME}:6443"
 networking:
