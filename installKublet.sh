@@ -108,7 +108,7 @@ yum remove -y kubelet kubeadm kubectl
 
 # 安装kubelet、kubeadm、kubectl
 # 将 ${1} 替换为 kubernetes 版本号，例如 1.19.0
-yum install -y kubelet-${1} kubeadm-${1} kubectl-${1}
+yum install -y kubelet kubeadm kubectl
 
 # 重启 docker，并启动 kubelet
 systemctl daemon-reload
